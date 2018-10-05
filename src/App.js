@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Router from "./Router.js";
-import { NavLink } from "react-router-dom";
+import React, { Component } from "react"
+import Router from "./Router.js"
+import { NavLink } from "react-router-dom"
 
 const Navigation = props => (
   <nav>
@@ -13,18 +13,18 @@ const Navigation = props => (
       </li>
     </ul>
   </nav>
-);
+)
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="page-container">
         <Navigation />
         <h1>My shopping cart</h1>
         <Router />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
