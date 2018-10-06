@@ -3,7 +3,7 @@ import React from "react"
 export default function ProductListItem(props) {
   console.log(props)
   return (
-    <div className="product-list-item">
+    <div className="product-list-item" key={props.product.id}>
       <h3>{props.product.name}</h3>
       <img
         height={100}
@@ -13,7 +13,9 @@ export default function ProductListItem(props) {
       <div>{props.product.description}</div>
       <div>{props.product.price}</div>
       <div>
-        <button>Add to cart</button>
+        <button onClick={() => props.addToCart(props.product)}>
+          Add to cart
+        </button>
       </div>
     </div>
   )
