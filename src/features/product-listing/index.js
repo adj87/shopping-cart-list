@@ -3,6 +3,7 @@ import ProductListItem from "./product-list-item"
 import { connect } from "react-redux"
 
 function ProductListing(props) {
+  //console.log(quantities)
   return (
     <div className="product-listing">
       {props.products.map((product, index) => (
@@ -10,6 +11,7 @@ function ProductListing(props) {
           key={index}
           product={product}
           addToCart={props.addToCart}
+          cart={props.cart}
         />
       ))}
       }
