@@ -11,6 +11,7 @@ function ProductListing(props) {
           key={index}
           product={product}
           addToCart={props.addToCart}
+          removeFromCart={props.removeFromCart}
           cart={props.cart}
         />
       ))}

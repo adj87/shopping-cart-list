@@ -23,6 +23,9 @@ export default function ProductListItem(props) {
             quantitiesOfItems[props.product.id]}
           )
         </button>
+        <button onClick={() => props.removeFromCart(props.product)}>
+          Remove from cart
+        </button>
       </div>
     </div>
   )
