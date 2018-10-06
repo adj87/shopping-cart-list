@@ -10,6 +10,12 @@ export default function ProductListItem(props) {
     <div className="product-list-item" key={props.product.id}>
       <h3>{props.product.name}</h3>
       <img
+        style={{
+          display: "block",
+          marginLeft: "auto",
+          marginRight: "auto",
+          width: 50 + "%",
+        }}
         height={100}
         title={props.product.name}
         src={`/products/${props.product.image}`}
